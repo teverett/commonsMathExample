@@ -14,6 +14,6 @@ public class RCStepHandler implements StepHandler {
 
    @Override
    public void handleStep(StepInterpolator interpolator, boolean isLast) throws MaxCountExceededException {
-      System.out.println("t=" + interpolator.getCurrentTime() + " y[0]=" + interpolator.getInterpolatedState()[0]);
+      System.out.println(interpolator.getCurrentTime() + "," + interpolator.getInterpolatedState()[0]);
    }
 }

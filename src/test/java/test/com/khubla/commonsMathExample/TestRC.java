@@ -10,7 +10,7 @@ import com.khubla.commonsMathExample.RCIntegrator;
  */
 public class TestRC {
    /*
-    * V=12V R=10Kohm C=10nF
+    * V=12V R=100Kohm C=10nF
     */
    @Test
    public void test1() {
@@ -19,7 +19,7 @@ public class TestRC {
           * integrator
           */
          RCIntegrator ode1Integrator = new RCIntegrator();
-         double R = 10 * 1000;
+         double R = 100 * 1000;
          double V = 12;
          double C = 10 * 10e-9;
          /*

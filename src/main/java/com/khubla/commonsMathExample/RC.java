@@ -32,7 +32,7 @@ public class RC implements FirstOrderDifferentialEquations {
     * Vc' = - (Vc-Vin)/RC;
     */
    public void computeDerivatives(double t, double[] y, double[] yDot) {
-      double rcTimeConstant = -1 / (R * C);
-      yDot[0] = rcTimeConstant * (y[0] - V);
+      double rcTimeConstant = (R * C);
+      yDot[0] = (-1 / rcTimeConstant) * (y[0] - V);
    }
 }
